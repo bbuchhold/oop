@@ -8,13 +8,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 class FizzBuzzTest {
 
 
-    FizzBuzz sut;
+    FizzBuzzAlternative sut;
 
     // wird vor jedem test ausgeführt
     @BeforeEach
     void setUp() {
 
-        sut = new FizzBuzz();
+        sut = new FizzBuzzAlternative();
     }
 
     @Test
@@ -24,7 +24,7 @@ class FizzBuzzTest {
         // FizzBuzz sut = new FizzBuzz();
 
         //run the function
-        String resultOfFizzBuzz = sut.calcFizzBuzz(1);
+        String resultOfFizzBuzz = sut.fizzBuzz(1);
 
         //assert resultOfFizzBuzz
         assertThat(resultOfFizzBuzz).isInstanceOf(String.class);
@@ -35,7 +35,7 @@ class FizzBuzzTest {
     void two_fizzBuzz_is_two() {
 
         // run the shit
-        String result = sut.calcFizzBuzz(2);
+        String result = sut.fizzBuzz(2);
 
         // assert the result
         assertThat(result).isEqualTo("2");
@@ -44,7 +44,7 @@ class FizzBuzzTest {
     @Test
     void fizzBuzz_of_15_is_FizzBuzz() {
 
-        String result = sut.calcFizzBuzz(15);
+        String result = sut.fizzBuzz(15);
 
         assertThat(result).isEqualTo("FizzBuzz");
     }
@@ -52,14 +52,14 @@ class FizzBuzzTest {
     @Test
     void fizzBuzz_of_3_is_Fizz() {
 
-        String result = sut.calcFizzBuzz(3);
+        String result = sut.fizzBuzz(3);
 
         assertThat(result).isEqualTo("Fizz");
     }
 
     @Test
     void fizzBuzz_of_5_is_Buzz() {
-        String result = sut.calcFizzBuzz(5);
+        String result = sut.fizzBuzz(5);
 
         assertThat(result).isEqualTo("Buzz");
     }

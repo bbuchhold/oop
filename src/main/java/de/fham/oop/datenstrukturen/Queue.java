@@ -15,7 +15,7 @@ public class Queue<g> {
 
     public g dequeue() {
         if(elements.isEmpty()) {
-            throw new QueueIsEmtpyException();
+            throw new EmptyQueueException();
         }
         return elements.remove(0);
     }

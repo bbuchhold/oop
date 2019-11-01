@@ -1,6 +1,5 @@
 package de.fham.oop.datenstrukturen;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -21,7 +20,7 @@ class QueueShould {
 
     @Test
     void throwExceptionWhenEmpty() {
-        assertThrows(QueueIsEmtpyException.class, () -> queue.dequeue());
+        assertThrows(EmptyQueueException.class, () -> queue.dequeue());
     }
 
     @Test

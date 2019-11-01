@@ -7,14 +7,14 @@ public class FizzBuzzAlternative {
 
     public String fizzBuzz(int number) {
 
-        Map<Integer,String> rules = new HashMap<>();
+        Map<Integer,String> rulez = new HashMap<>();
 
-        rules.put(3, "Fizz");
-        rules.put(5, "Buzz");
+        rulez.put(3, "Fizz");
+        rulez.put(5, "Buzz");
 
         StringBuilder sb = new StringBuilder();
 
-        rules.forEach((integer, s) -> {
+        rulez.forEach((integer, s) -> {
             if(number % integer == 0)
                 sb.append(s);
         });

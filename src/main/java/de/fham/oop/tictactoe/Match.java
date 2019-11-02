@@ -10,7 +10,6 @@ public class Match extends JPanel implements ActionListener {
     private String player = "O";
     private WinnerFrame winnerFrame;
 
-
     public Match(WinnerFrame winnerFrame) {
         this.winnerFrame = winnerFrame;
 

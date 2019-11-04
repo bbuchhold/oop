@@ -8,6 +8,11 @@ public class AirplaneBuilder{
     private String model;
 
     public Airplane build (){
+
+        if (engines.size() > 2) {
+            throw new WrungNumberOfEnginesException();
+        }
+
         return new Airplane(model, engines);
          }
     public void setModel(String model){

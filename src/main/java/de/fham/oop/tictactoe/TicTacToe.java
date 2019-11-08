@@ -1,4 +1,4 @@
-package de.fham.oop.tictactoe2;
+package de.fham.oop.tictactoe;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
